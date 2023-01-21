@@ -4,13 +4,11 @@
 1. Complete your exam on a new Developer edition environment: https://developer.salesforce.com/signup
 2. Create LWC component on the Sales App > Home page
     a. Put table inside this component, which has:
-    
         i. Accounts with the necessary columns: Name, Type, Owner, Created Date
-        ![Table](https://user-images.githubusercontent.com/79301432/213876007-cadacd05-4121-46bb-ba33-e993529f5ef4.PNG)
-        
         ii. Search input field
-        
+        ![search](https://user-images.githubusercontent.com/79301432/213876047-0d92b89f-8e84-4ed2-a76d-0ba71a6a58d0.gif)
         iii. Lazy loading functionality
+        ![lazyLoding](https://user-images.githubusercontent.com/79301432/213876051-4dd2456b-3495-4cc0-ab9a-797a7e4590a2.gif)
 
     b. Near the table should be a button “Create Account” that opens a modal window (pop-up)
         i. Modal window should have the following fields: Name & Type
