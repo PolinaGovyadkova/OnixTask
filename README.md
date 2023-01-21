@@ -1,18 +1,28 @@
-# Salesforce DX Project: Next Steps
+# LABORATORY EXAM
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## Task
+1. Complete your exam on a new Developer edition environment: https://developer.salesforce.com/signup
+2. Create LWC component on the Sales App > Home page
+    a. Put table inside this component, which has:
+    
+        i. Accounts with the necessary columns: Name, Type, Owner, Created Date
+        ![Table](https://user-images.githubusercontent.com/79301432/213875828-7b2c128e-b6e4-410c-9c8d-d2cff33a70d1.PNG)
+        ii. Search input field
+        ![search](https://user-images.githubusercontent.com/79301432/213875839-4dd870db-03a4-4586-812d-aa611771352f.gif)
+        iii. Lazy loading functionality
+        ![lazyLoding](https://user-images.githubusercontent.com/79301432/213875846-de50492d-7cbb-4465-9733-94819437991d.gif)
 
-## How Do You Plan to Deploy Your Changes?
+    b. Near the table should be a button “Create Account” that opens a modal window (pop-up)
+        i. Modal window should have the following fields: Name & Type
+        ii. At the footer should be two buttons: Cancel & Save, which should do the necessary actions
+        ![crateAccount](https://user-images.githubusercontent.com/79301432/213875868-9c85d1a3-00ae-4fca-866e-51ee64f2f321.gif)
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+3. Create a Trigger on Account object using all Apex events
+    a. Logic should create a Task record if Account’s Type is “Technology Partner”
+    b. Set fields on a Task record on your discretion
+    ![Task](https://user-images.githubusercontent.com/79301432/213875885-4c531248-0c7d-41f0-ac89-4a15eee6404a.png)
 
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+4. Write Unit tests
+5. Add basic & javadoc comments in code
+6. Set the IP Range on System Admin Profile: 0.0.0.0 - 255.255.255.255
+![ipRange](https://user-images.githubusercontent.com/79301432/213875947-ae9b7bba-e01f-4936-a98a-70cae67c277e.PNG)
