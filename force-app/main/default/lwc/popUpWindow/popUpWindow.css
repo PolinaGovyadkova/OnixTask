@@ -1,0 +1,4 @@
+.slds-modal__container {
+    z-index: 9999;
+    width: fit-content;
+}

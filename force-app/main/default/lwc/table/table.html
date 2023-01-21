@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Account Table">
+        <div class="slds-grid slds-m-around_small">
+            <lightning-input
+                type="search"
+                placeholder="Search acount..."
+                variant="label-hidden"
+                onchange={handleSearch}></lightning-input>
+            <div class="slds-m-left_small">
+                <c-pop-up-window onclick={handlePopupEvent}></c-pop-up-window>
+            </div>
+        </div>
+        <div class="slds-box">
+            <lightning-datatable
+                class="table"
+                key-field="Id"
+                hide-checkbox-column="true"
+                enable-infinite-loading={enableInfiniteLoading}
+                onloadmore={loadMoreData}
+                data={rows}
+                columns={columns}></lightning-datatable>
+        </div>
+    </lightning-card>
+</template>

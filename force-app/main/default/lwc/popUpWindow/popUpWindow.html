@@ -1,0 +1,31 @@
+<template>
+    <!-- lightning button for open modal window -->
+    <lightning-button label="Create account" onclick={submitDetails}></lightning-button>
+     <!--Use template if:true to display/hide popup based on isOpen value--> 
+    <template if:true={isOpen}>
+        <section
+            role="dialog"
+            tabindex="-1"
+            aria-modal="true"
+            aria-describedby="modal-content-id-1"
+            class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <!-- Pop-up header -->
+                <header class="slds-modal__header">
+                    <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Create new account</h1>
+                </header>
+                <!-- Pop-up body -->
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <lightning-record-form class="slds-grid slds-grid_vertical"
+                        object-api-name={objectApiName}
+                        record-id={recordId}
+                        fields={fields}
+                        mode="edit"
+                        onsubmit={handleSubmit}
+                        oncancel={handleClose}></lightning-record-form>
+                </div>
+            </div>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </section>
+    </template>
+</template>
