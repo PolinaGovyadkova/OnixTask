@@ -6,11 +6,11 @@
     a. Put table inside this component, which has:
     
         i. Accounts with the necessary columns: Name, Type, Owner, Created Date
-        ![Table](https://user-images.githubusercontent.com/79301432/213875828-7b2c128e-b6e4-410c-9c8d-d2cff33a70d1.PNG)
+        ![Table](https://user-images.githubusercontent.com/79301432/213876007-cadacd05-4121-46bb-ba33-e993529f5ef4.PNG)
+        
         ii. Search input field
-        ![search](https://user-images.githubusercontent.com/79301432/213875839-4dd870db-03a4-4586-812d-aa611771352f.gif)
+        
         iii. Lazy loading functionality
-        ![lazyLoding](https://user-images.githubusercontent.com/79301432/213875846-de50492d-7cbb-4465-9733-94819437991d.gif)
 
     b. Near the table should be a button “Create Account” that opens a modal window (pop-up)
         i. Modal window should have the following fields: Name & Type
